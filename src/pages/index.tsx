@@ -1,18 +1,7 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
 import NavBar from "@/components/layout/NavBar";
 import Card from "@/components/common/Card";
 import Footer from "@/components/layout/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -68,15 +57,17 @@ export default function Home() {
                     rates, and profitability.
                   </p>
                   <p className="mt-[25px]">
-                    Whether you're running a small farm or managing a
+                    Whether you&apos;re running a small farm or managing a
                     large-scale operation, Jib Farms & Agro-Allied is your
                     trusted partner in sustainable animal nutrition.
                   </p>
                 </div>
-                <img
+                <Image
                   src="/images/about.jpeg"
-                  alt=""
-                  className=" md:w-1/2 h-[475px] w-[440px] rounded-lg"
+                  alt="About Jib Farms"
+                  width={440}
+                  height={475}
+                  className="md:w-1/2 h-[475px] w-[440px] rounded-lg"
                 />
               </div>
             </div>
@@ -85,7 +76,7 @@ export default function Home() {
 
         {/*  Our services */}
         <section className=" bg-white">
-          <img
+          <Image
             src="/images/grass-4.png"
             alt=""
             className="h-[30px] object-cover w-full"
@@ -105,8 +96,6 @@ export default function Home() {
                   imageSrc="/images/white-rooster.jpg"
                   title="Advanced Feed Formulation"
                   description="We use modern agricultural science and proven nutritional standards to create balanced feeds that support optimal animal health, growth, and productivity."
-                  // buttonText="Order Now"
-                  // onClick={() => alert("Ordering now!")}
                 />
                 <Card
                   imageSrc="/images/card2.jpg"
@@ -117,8 +106,6 @@ export default function Home() {
                   imageSrc="/images/card3.jpg"
                   title="Efficient Distribution Network"
                   description="Our robust supply chain ensures fast and consistent delivery across Nigeria, reducing feed shortages and improving farm operations."
-                  // buttonText="Learn More"
-                  // onClick={() => console.log("Learn more clicked")}
                 />
               </div>
             </div>
@@ -129,15 +116,15 @@ export default function Home() {
           <div className="bg-black/50">
             <div className="p-5 md:px-10 py-[8rem] lg:py-[10rem] w-full max-w-7xl mx-auto">
               <h3 className="text-4xl md:text-8xl font-bold mb-6 text-center font-glitter">
-              We produce and distribute quality livestock feeds for healthier animals and better farms.
+                We produce and distribute quality livestock feeds for healthier
+                animals and better farms.
               </h3>
             </div>
 
-            {/* <div className="h-[80px] md:h-[300px]"></div> */}
           </div>
         </section>
 
-        {/* Contact */}
+
       </main>
 
       <Footer />

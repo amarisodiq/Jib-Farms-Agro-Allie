@@ -1,13 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer>
-      <img
+      <Image
         src="/images/grass-2.png"
-        alt=""
+        alt="Grass footer decoration"
+        width={1920} // choose realistic width
+        height={30}  // matches your Tailwind h-[30px]
         className="h-[30px] object-cover w-full"
+        priority={false} // ensures lazy loading
       />
       <div className="bg-[#0d401c] text-gray-300 py-8">
         <div className="max-w-7xl mx-auto px-5 md:px-10">
