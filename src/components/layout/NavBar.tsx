@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,7 +20,15 @@ const NavBar = () => {
     "
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
-        <div className="text-2xl font-bold">Jib Farms</div>
+      <Link href="#">
+        <Image
+          src="/images/jib-logo.png"
+          alt="Jib Farms Logo"
+          width={50} 
+          height={30}
+          className="h-auto w-auto"
+        />
+      </Link>
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (

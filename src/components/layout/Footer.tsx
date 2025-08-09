@@ -8,8 +8,8 @@ const Footer = () => {
       <Image
         src="/images/grass-2.png"
         alt="Grass footer decoration"
-        width={1920} // choose realistic width
-        height={30}  // matches your Tailwind h-[30px]
+        width={1920} 
+        height={30}  
         className="h-[30px] object-cover w-full"
         priority={false} // ensures lazy loading
       />

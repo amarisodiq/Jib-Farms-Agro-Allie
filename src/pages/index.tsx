@@ -12,11 +12,18 @@ export default function Home() {
       >
         <NavBar />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[#00000046]"></div>
+        <div className="absolute inset-0 bg-[#00000063]"></div>
         {/* Hero */}
         <section className="relative z-10 flex items-center justify-center h-full p-5 md:px-10 text-white text-center">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+            <Image
+              src="/images/jib-logo.png" 
+              alt="Jib Farms Logo"
+              width={120} 
+              height={50}
+              className="h-auto w-auto mx-auto"
+            />
+            <h1 className="text-4xl md:text-6xl font-bold my-4">
               Welcome to Jib Farms & Agro-Allied
             </h1>
             <p className="text-lg md:text-xl mb-6">
@@ -78,7 +85,9 @@ export default function Home() {
         <section className=" bg-white">
           <Image
             src="/images/grass-4.png"
-            alt=""
+            alt="garss"
+            width={1920}
+            height={30}
             className="h-[30px] object-cover w-full"
           />
           <div className="bg-[#f8c32c] ">
@@ -120,11 +129,8 @@ export default function Home() {
                 animals and better farms.
               </h3>
             </div>
-
           </div>
         </section>
-
-
       </main>
 
       <Footer />
