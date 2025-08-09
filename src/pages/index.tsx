@@ -21,7 +21,7 @@ export default function Home() {
               alt="Jib Farms Logo"
               width={120} 
               height={50}
-              className="h-auto w-auto mx-auto"
+              className="h-auto w-auto mx-auto mt-10"
             />
             <h1 className="text-4xl md:text-6xl font-bold my-4">
               Welcome to Jib Farms & Agro-Allied

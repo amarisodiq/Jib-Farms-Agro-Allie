@@ -16,19 +16,21 @@ const NavBar = () => {
 
   return (
     <nav
-      className="bg-[#000000c7] text-white px-5 md:px-10 py-4 shadow-md fixed top-0 left-0 w-full z-50
+      className="bg-[#000000c7] text-white px-5 md:px-10 py-2 shadow-md fixed top-0 left-0 w-full z-50
     "
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center flex-wrap">
-      <Link href="#">
-        <Image
-          src="/images/jib-logo.png"
-          alt="Jib Farms Logo"
-          width={50} 
-          height={30}
-          className="h-auto w-auto"
-        />
-      </Link>
+        <Link href="#" className="flex items-center">
+          <div className="relative w-24 h-10 sm:w-28 sm:h-12 md:w-32 md:h-14">
+            <Image
+              src="/images/jib-logo.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
+        </Link>
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-6">
           {navLinks.map((link) => (
@@ -44,8 +46,8 @@ const NavBar = () => {
 
         {/* Contact Info */}
         <div className="hidden lg:flex items-center space-x-2  text-sm">
-          <div>+234 812 345 6789</div>
-          <div>info@jibfarms.com</div>
+          <div>+234 813 927 2948</div>
+          <div>ibjimoh204@gmail.com</div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -105,8 +107,8 @@ const NavBar = () => {
           ))}
           {/* Mobile Contact Info */}
           <div className="text-sm space-y-1 pt-2 border-t border-white/20">
-            <div>📞 +234 812 345 6789</div>
-            <div>✉️ info@jibfarms.com</div>
+            <div>+234 813 927 2948</div>
+            <div>ibjimoh204@gmail.com</div>
           </div>
         </div>
       )}
