@@ -17,9 +17,9 @@ export default function Home() {
         <section className="relative z-10 flex items-center justify-center h-full p-5 md:px-10 text-white text-center">
           <div>
             <Image
-              src="/images/jib-logo.png" 
+              src="/images/jib-logo.png"
               alt="Jib Farms Logo"
-              width={120} 
+              width={120}
               height={50}
               className="h-auto w-auto mx-auto mt-10"
             />
@@ -102,19 +102,20 @@ export default function Home() {
               {/* Card */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <Card
-                  imageSrc="/images/white-rooster.jpg"
+                  imageSrc="/images/card3.jpg"
                   title="Advanced Feed Formulation"
                   description="We use modern agricultural science and proven nutritional standards to create balanced feeds that support optimal animal health, growth, and productivity."
                 />
                 <Card
-                  imageSrc="/images/card2.jpg"
+                  imageSrc="/images/card4.jpeg"
                   title="High-Quality Raw Materials"
                   description="Only the best ingredients go into our feeds — carefully selected, tested, and processed to meet the nutritional needs of different livestock species."
                 />
                 <Card
-                  imageSrc="/images/card3.jpg"
+                  imageSrc="/images/card7.jpg"
                   title="Efficient Distribution Network"
                   description="Our robust supply chain ensures fast and consistent delivery across Nigeria, reducing feed shortages and improving farm operations."
+                  // className="object-contain"
                 />
               </div>
             </div>
@@ -128,6 +129,44 @@ export default function Home() {
                 We produce and distribute quality livestock feeds for healthier
                 animals and better farms.
               </h3>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact us */}
+        <section className="bg-white">
+          <div className="h-screen w-full flex justify-center items-center p-6">
+            <div className="grid h-full grid-cols-10 grid-rows-50 gap-4 w-full max-w-7xl">
+              {/* image  */}
+              <div className="col-span-full md:col-span-4 md:row-span-25 flex justify-center items-center">
+                <Image
+                  src="/images/card8.jpg"
+                  alt="chicks"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover rounded-3xl"
+                />
+              </div>
+              {/* Contact block */}
+              <div className="col-span-full md:col-span-6 md:row-span-50 flex justify-center items-center bg-indigo-200 rounded-3xl">
+                Contact
+              </div>
+
+              {/* Address block */}
+              <div className="col-span-full md:col-span-4 md:row-span-25 flex justify-center items-center bg-[#f8c32c] rounded-3xl">
+                <div className="p-6 border text-black">
+                  <div>
+                    <h3 className="font-bold">Address</h3>
+                    <p>
+                      4, Ahmad Taoffek Street, Off Umar Audi Road, Gra Ilorin
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold">Contact Us</h3>
+                    <p>ibjimoh204@gmail.com +234 813 927 2948</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

@@ -8,8 +8,8 @@ const Footer = () => {
       <Image
         src="/images/grass-2.png"
         alt="Grass footer decoration"
-        width={1920} 
-        height={30}  
+        width={1920}
+        height={30}
         className="h-[30px] object-cover w-full"
         priority={false} // ensures lazy loading
       />
@@ -19,11 +19,28 @@ const Footer = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {/* Logo / About */}
             <div>
-              <h2 className="text-xl font-bold text-white mb-4">MyWebsite</h2>
+              <Image
+                src="/images/jib-logo.png"
+                alt="Jib Farms Logo"
+                width={120}
+                height={50}
+                className="h-auto w-auto mb-4"
+              />
               <p className="text-sm">
-                Building amazing web experiences with modern tools and great
-                UI/UX design.
+                We produce and distribute premium livestock feeds to help
+                farmers raise healthier animals and grow profitable farms.
               </p>
+            </div>
+
+            {/* Address */}
+            <div>
+              <h3 className="text-lg font-semibold text-white mb-3">Address</h3>
+              <p className="mb-3">
+                4, Ahmad Taoffek Street, Off Umar Audi Road, Gra Ilorin
+              </p>
+              <h3 className="text-lg font-semibold text-white mb-3">Contact</h3>
+              <p>ibjimoh204@gmail.com</p>
+              <p>+234 813 927 2948</p>
             </div>
 
             {/* Quick Links */}
@@ -55,35 +72,6 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Resources */}
-            <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                Resources
-              </h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="/blog" className="hover:text-white">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/faq" className="hover:text-white">
-                    FAQ
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/support" className="hover:text-white">
-                    Support
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="hover:text-white">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
             {/* Social Media */}
             <div>
               <h3 className="text-lg font-semibold text-white mb-3">
@@ -105,18 +93,14 @@ const Footer = () => {
                     Instagram
                   </a>
                 </li>
-                <li>
-                  <a href="#" className="hover:text-white">
-                    LinkedIn
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
 
           {/* Divider */}
           <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
-            © {new Date().getFullYear()} MyWebsite. All rights reserved.
+            © {new Date().getFullYear()} Jib Farms & Agro-Allied. All rights
+            reserved.
           </div>
         </div>
       </div>
